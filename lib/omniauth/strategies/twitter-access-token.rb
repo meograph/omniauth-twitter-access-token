@@ -27,7 +27,7 @@ module OmniAuth
 
       attr_accessor :access_token
 
-      uid { raw_info['id'] }
+      uid { raw_info['id'].to_s }
 
       info do
         {
